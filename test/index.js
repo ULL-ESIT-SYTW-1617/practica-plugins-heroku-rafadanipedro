@@ -1,6 +1,7 @@
-import * as pluginHeroku from '../src'
+const pluginHeroku = require('../dist')
 
 console.log(Object.keys(pluginHeroku))
+
 /*
 pluginHeroku.config()
   .then(config => {
