@@ -35,7 +35,9 @@
     "co": "^4.6.0",
     "fs-promise": "0.5.0",
     "gulp": "gulpjs/gulp#4.0",
-    "prompt": "^1.0.0"
+    "ncp": "^2.0.0",
+    "prompt": "^1.0.0",
+    "simple-git": "^1.57.0"
   },
   "devDependencies": {
     "babel-polyfill": "^6.16.0",
