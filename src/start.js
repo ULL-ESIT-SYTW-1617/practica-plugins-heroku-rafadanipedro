@@ -1,6 +1,8 @@
 import Heroku from 'heroku-client'
 
 export default async function start (config = {}) {
+  console.log('Me pasas esta config al start')
+  console.log(config)
   if (!config.nombreApp) throw new Error('Tienes que pasarme el nombre de la App para poder crearla')
   if (!config.token) throw new Error('Tienes que pasarme el token para poder crear la App')
 

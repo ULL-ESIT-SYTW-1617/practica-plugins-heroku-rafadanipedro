@@ -14,6 +14,8 @@ export default async function config () {
 
   defaultConfig.token = await ask('Introduce tu token de Heroku (https://dashboard.heroku.com/account)')
   defaultConfig.nombreApp = normalizarNombre(defaultConfig.title)
+  console.log('La config final es')
+  console.log(defaultConfig)
   return defaultConfig
 }
 
