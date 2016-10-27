@@ -32,8 +32,10 @@
   },
   "homepage": "https://github.com/ULL-ESIT-SYTW-1617/practica-plugins-heroku-rafadanipedro#readme",
   "dependencies": {
+    "co": "^4.6.0",
     "fs-promise": "0.5.0",
-    "gulp": "gulpjs/gulp#4.0"
+    "gulp": "gulpjs/gulp#4.0",
+    "prompt": "^1.0.0"
   },
   "devDependencies": {
     "babel-polyfill": "^6.16.0",
