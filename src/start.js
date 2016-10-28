@@ -8,7 +8,7 @@ export default async function start (config = {}) {
 
   let token
   try {
-    token = fs.readFileSync(config.token)
+    token = fs.readFileSync(config.token).toString()
   } catch(err) {
     throw new Error(`La ruta hasta el token no es la correcta ${config.token}`)
   }
