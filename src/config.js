@@ -12,7 +12,7 @@ export default async function config () {
   if(!defaultConfig.title) defaultConfig.title = await ask('Escribe el título del libro')
   if(!defaultConfig.path) defaultConfig.path = await ask('Escribe la ruta completa hasta la build del gitbook')
 
-  defaultConfig.token = await ask('Introduce tu token de Heroku (https://dashboard.heroku.com/account)')
+  defaultConfig.token = await ask('Introduce la ruta del fichero donde tienes tu token de Heroku')
   defaultConfig.nombreApp = normalizarNombre(defaultConfig.title)
   console.log('La config final es')
   console.log(defaultConfig)

@@ -6,7 +6,6 @@ import ncp from 'ncp'
 ncp.limit = Infinity
 
 export default async function deploy (params) {
-  if (!params.token) throw new Error('Necesito un token para poder desplegar la aplicación')
   if (!params.path) throw new Error('Necesito la dirección del gitbook construido')
   if (!params.nombreApp) throw new Error('Necesito el nombre de la App')
 

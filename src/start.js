@@ -4,9 +4,16 @@ export default async function start (config = {}) {
   console.log('Me pasas esta config al start')
   console.log(config)
   if (!config.nombreApp) throw new Error('Tienes que pasarme el nombre de la App para poder crearla')
-  if (!config.token) throw new Error('Tienes que pasarme el token para poder crear la App')
+  if (!config.token) throw new Error('Tienes que pasarme la ruta del token')
 
-  createApp(config.nombreApp, config.token)
+  let token
+  try {
+    token = fs.readFileSync(config.token)
+  } catch(err) {
+    throw new Error(`La ruta hasta el token no es la correcta ${config.token}`)
+  }
+
+  createApp(config.nombreApp, token)
 }
 
 async function createApp (name, token) {
