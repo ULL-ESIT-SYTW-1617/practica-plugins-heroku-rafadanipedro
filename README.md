@@ -9,7 +9,7 @@ Este plugin se encarga de copiar la carpeta generada por Gitbook, por defecto gh
 Con esto, Heroku ya muestra el libro desplegado.
 
 Para usar el plugin, es aconsejable utilizarlo llamándolo desde el plugin [`gitbook-start-heroku-rafadanipedro`](https://www.npmjs.com/package/gitbook-start-heroku-rafadanipedro). Si lo utilizamos, debemos de realizar un `gitbook-start --deploy=plugin-heroku-rafadanipedro`. Las opciones disponibles son:
-* `--token`: para especificar el token para autentificarnos.
+* `--token`: para especificar la ruta donde se almacena el token para autentificarnos.
 * `--path`: para especificar donde se encuentra el Gitbook construido.
 * `--nombreApp`: para especificar el nombre de nuestra aplicación a desplegar.
 * `--title`: sirve para especificar manualmente el título del libro.
