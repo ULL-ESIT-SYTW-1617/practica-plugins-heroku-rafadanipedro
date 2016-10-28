@@ -5,6 +5,16 @@ En esta práctica utilizaremos dos repositorios para poder publicar un libro de 
 Con el otro repositorio se generará un Gitbook y este será para crear un plugin de manera que se pueda desplegar el libro en una aplicación en Heroku.
 
 ## Uso del plugin
+Este plugin se encarga de copiar la carpeta generada por Gitbook, por defecto gh-pages, y la pega en .heroku, un directorio temporal. En este directorio se incluyen también los ficheros necesarios para crear un servidor de Express. Posteriormente, se crea un repositorio temporal y se pushea a Heroku.
+Con esto, Heroku ya muestra el libro desplegado.
+
+Para usar el plugin, es aconsejable utilizarlo llamándolo desde el plugin [`gitbook-start-heroku-rafadanipedro`](https://www.npmjs.com/package/gitbook-start-heroku-rafadanipedro). Si lo utilizamos, debemos de realizar un `gitbook-start --deploy=plugin-heroku-rafadanipedro`. Las opciones disponibles son:
+* `--token`: para especificar el token para autentificarnos.
+* `--path`: para especificar donde se encuentra el Gitbook construido.
+* `--nombreApp`: para especificar el nombre de nuestra aplicación a desplegar.
+* `--title`: sirve para especificar manualmente el título del libro.
+
+Si no se introduce alguno de estos argumentos, se pide por pantalla.
 
 ## Enlace al paquete en npm
 * [Paquete publicado en npm](https://www.npmjs.com/package/plugin-heroku-rafadanipedro)
