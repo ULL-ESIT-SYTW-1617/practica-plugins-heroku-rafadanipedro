@@ -1,4 +1,5 @@
 import Heroku from 'heroku-client'
+import fs from 'fs'
 
 export default async function start (config = {}) {
   console.log('Me pasas esta config al start')
@@ -10,6 +11,7 @@ export default async function start (config = {}) {
   try {
     token = fs.readFileSync(config.token).toString()
   } catch(err) {
+    console.log(err)
     throw new Error(`La ruta hasta el token no es la correcta ${config.token}`)
   }
 
