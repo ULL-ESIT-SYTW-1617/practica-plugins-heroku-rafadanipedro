@@ -16,6 +16,8 @@ Para usar el plugin, es aconsejable utilizarlo llamándolo desde el plugin [`git
 
 Si no se introduce alguno de estos argumentos, se pide por pantalla.
 
+Una vez creada la aplicación en Heroku, para deplegar el libro tenemos que ejecutar `gulp herokuRafadanipedro`.
+
 ## Enlace al paquete en npm
 * [Paquete publicado en npm](https://www.npmjs.com/package/plugin-heroku-rafadanipedro)
 
